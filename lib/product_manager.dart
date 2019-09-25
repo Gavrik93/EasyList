@@ -5,7 +5,7 @@ class ProductManager extends StatefulWidget {
 
   final String startingProduct;
 
-
+//contain data from main.dart
   ProductManager(this.startingProduct){
     print('[ProductsManager Widget] Constructor');
   }
@@ -37,6 +37,7 @@ class _ProductManagerState extends State<ProductManager> {
         Container(
           margin: EdgeInsets.all(10.0),
           child: RaisedButton(
+            color: Theme.of(context).primaryColorLight,
             onPressed: () {
               setState(() {
                 _products.add('Advanced party tester');

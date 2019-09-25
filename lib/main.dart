@@ -7,6 +7,9 @@ class MyApp extends StatelessWidget {
   @override
   build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        brightness: Brightness.dark
+      ),
       home: Scaffold(
         appBar: AppBar(
           title: Text('EasyList'),
